@@ -3,6 +3,10 @@ padding: 1.5em;
 background-color: black;
 }
 
+.list-group-item-text {
+  display: none;
+}
+
 img {
   width: 100%;
 }
