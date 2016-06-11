@@ -1,0 +1,30 @@
+.blackHeader {
+padding: 1.5em;
+background-color: black;
+}
+
+img {
+  width: 100%;
+}
+
+.researchArticles {
+  padding: 2em;
+}
+
+.list-group {
+  padding: 1em;
+  /*border-bottom: 2px solid gray;*/
+}
+
+.list-group-item-heading {
+  padding-bottom: 1em;
+}
+
+
+.alphabetLinks li{
+  display: inline-block;
+}
+
+.smallMedia {
+  width: 200px;
+}
