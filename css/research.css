@@ -24,6 +24,12 @@ img {
   padding-bottom: 1em;
 }
 
+.emphasized {
+  font-size: 2em;
+  background-color: orange;
+  font-weight: 400;
+  }
+
 
 .alphabetLinks li{
   display: inline-block;
