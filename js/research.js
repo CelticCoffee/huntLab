@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   //This opens the different articles//
   $('div.list-group').click(function(){
-    $('div.list-group-item-text', this).toggle('slow');
+    $('div.list-group-item-text', this).show('slow');
     console.log(this);
   });
 
