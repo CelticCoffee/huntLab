@@ -7,6 +7,11 @@ background-color: black;
   display: none;
 }
 
+.hidden {
+  display: none;
+}
+
+
 img {
   width: 100%;
 }
@@ -36,9 +41,47 @@ img {
 }
 
 .smallMedia {
-  width: 75%;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+  border: 1px solid gray;
+  margin-bottom: 1em;
 }
 
 .hepatocyteImgs li {
   display: inline;
+}
+
+.specialText {
+  display: none;
+}
+
+.secondSpecialText {
+  display: none;
+}
+
+.specialSection {
+  padding: 1em;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  margin-bottom: 20px;
+}
+
+.secondSpecialSection {
+  padding: 1em;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  margin-bottom: 20px;
+}
+
+
+.sillicoSub li {
+  margin-bottom: 1em;
+}
+
+.tinyIcon {
+  width: 15px;
 }
