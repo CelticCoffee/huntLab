@@ -21,15 +21,48 @@
         <link rel="stylesheet" href="css/research.css">
       </head>
       <body>
-            <!--[if lt IE 8]>
+        <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
 
-            <!-- Add your site or application content here -->
+        <!-- Add your site or application content here -->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Biosystems Group at UCSF</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Research<span class="sr-only">(current)</span></a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Collaboration</a></li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">Observations</a></li>
+          <li><a href="#">Publications</a></li>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
           <div class="container-fluid">
             <div class="row blackHeader">
               <div class="col-xs-12">
                 <img src="img/unpolarizedvspolarized.png" alt ="Cell diagram of polarized and unpolarized" class="responsive">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <h3>Current Interdisciplinary Research</h3>
               </div>
             </div>
             <div class="row researchArticles">
@@ -226,6 +259,7 @@
                   </div>
                   </div>
                 </div>
+              </div>
                 <div class="row articleBlock">
                   <div class="col-xs-12 secondSpecialSection">
                     <h4 class="secondSpecialHeader">Simulation Modeling of Epithelial Morphogenesis and Malignancy</h4>
@@ -279,46 +313,23 @@
                 </div>
                 <div class="row articleBlock">
                     <div class="col-xs-12 list-group">
-                      <h4 class="list-group-item-heading">Modeling the Collective Behavior of Hepatocytes in Clearing Toxins</h4>
-                      <div class="col-xs-12 list-group-item-text">
-                        <ul class= "hepatocyteImgs">
-                          <li><img class="smallMedia list-group-item-text" src="img/schematic.gif" alt="The simple game"></li>
-                          <li><img class="smallMedia list-group-item-text" src="img/liver-lobule-pic.gif" alt="The Schematic mapping to the liver"></li>
-                      </div>
-                      <div class="col-xs-12 list-group-item-text">
-                        <p>
-                            Figure 1. The schematic of the simple game &#40;A&#41; and its mapping to the liver &#40;B&#41;.
-                            Legend:
-                            Filled circles &#40;A1 and A2&#41;: Agents 1 and 2 &#40;also referred to as players&#41;.
-                            Unfilled circles &#40;N1 and N2&#41;:  Nature players &#40;map to extracellular spaces, such as sinusoidal vessels etc, in periportal and perivenous regions, respectively&#41;
-                            Arrows: possible routs a compound can take.
-                            &#40;-c1,-c2&#41; at terminal nodes indicates the costs of c1 and c2 imposed to players 1 and 2, respectively. ci can be one of the following:
-                            0: no cost,
-                            e: cost of elimination &#40;e.g. energy/resource consumption&#41;,
-                            T: toxicity costs &#40;e.g. the damage caused by the compound to the external tissue&#41;.
-                            Li: percentage of incoming compounds that player i does not encounter.
-                            Pi: percentage of encountered compounds that player i eliminates.
-                            Description of the game:
-                            At each time step one simulated compound enters the game:
-                            1. Nature forces at N1 pass the compound to N2 with probability L1; or alternatively, pass it to player 1 with probability 1-L1.
-                            2. Player 1 either eliminates the compound with probability P1 and pays the elimination cost &#40;e&#41;, or takes the risk and pass the compound to N2 with probability 1-P1.
-                            3. Nature forces at N2 pass the compound to the terminal node with probability L2, in which case both players have to pay the toxicity cost T. Conversely, the forces might pass the compound to player 2, with probability 1-L2.
-                            4. Player 2 either eliminates the compound with probability P2 and pays the elimination cost &#40;e&#41;, or takes the risk and passes the compound to the terminal node and makes both players pay the toxicity cost T.
-                            Mappings to the liver:
-                            Players 1 and 2: xenobiotic eliminating agents in the periportal and perivenous regions of the liver, respectively.
-                            Pi: Clearance Strategy of player i -- the probability that the xenobiotic eliminating agents in zone i eliminate an encountered compound. In other words, it maps to the clearance probability as a consequence of all complex stochastic events that eventually result in elimination of the compound seen by zone i. The events include: binding to transporters, membrane proteins, or enzymes, metabolism, excretion to bile, etc.
-                            Li: Percentage of incoming compounds that cannot be seen by zone i due to physical constraints outside cells’ control. Examples include: remaining out of hepatocytes’ reach by staying inside the sinusoidal vessels due to saturated or damaged transporters, etc.  Li is the percentage of compounds players i cannot process even with maximum effort.
-
-                      </div>
-                    </div>
+                      <h4 class="list-group-item-heading" id="externalResearchPage"><a href="http://biosystems.ucsf.edu/research_zonation.html" target="_blank">Modeling the Collective Behavior of Hepatocytes in Clearing Toxins</a></h4>
                   </div>
+                </div>
                   <div class="row articleBlock">
                     <div class="col-xs-12 list-group">
                       <h4 class="list-group-item-heading">MDCK Cystogenesis Simulation Modeling</h4>
                       <div class="list-group-item-text">
                         <p>
-                        Epithelial cells perform essential functions throughout the body, acting as both barrier and transporter and allowing an organism to survive and thrive in varied environments. Although the details of many processes that occur within individual cells are well understood, we still lack a thorough understanding of how cells coordinate their behaviors to create complex tissues. In order to achieve deeper insight, we created a list of targeted attributes and plausible rules for the growth of multicellular cysts formed by Madin-Darby canine kidney &#40;MDCK&#41; cells grown in vitro. We then designed in silico analogues of MDCK cystogenesis using object-oriented programming. In silico components &#40;such as the cells and lumens&#41; and their behaviors directly mapped to in vitro components and mechanisms. We conducted in vitro experiments to generate data that would validate or falsify the in silico analogues and then iteratively refined the analogues to mimic that data. Cells in vitro begin to stabilize at around the fifth day even as cysts continue to expand. The in silico system mirrored that behavior and others, achieving new insights. For example, luminal cell death is not strictly required for cystogenesis, and cell division orientation is very important for normal cyst growth.
+                        Epithelial cells perform essential functions throughout the body, acting as both barrier and transporter and allowing an organism to survive and thrive in varied environments. Although the details of many processes that occur within individual cells are well understood, we still lack a thorough understanding of how cells coordinate their behaviors to create complex tissues. In order to achieve deeper insight, we created a list of targeted attributes and plausible rules for the growth of multicellular cysts formed by Madin-Darby canine kidney &#40;MDCK&#41; cells grown in vitro. We then designed in silico analogues of MDCK cystogenesis using object-oriented programming. In silico components &#40;such as the cells and lumens&#41; and their behaviors directly mapped to in vitro components and mechanisms. We conducted in vitro experiments to generate data that would validate or falsify the in silico analogues and then iteratively refined the analogues to mimic that data. Cells in vitro begin to stabilize at around the fifth day even as cysts continue to expand. The in silico system mirrored that behavior and others, achieving new insights. For example, luminal cell death is not strictly required for cystogenesis, and cell division orientation is very important for normal cyst growth.<br><br>
+                        Project Contact&#58; Jesse A. Engelberg<br><br>
+                        Collaborators&#58; Anirban Datta, Keith E. Mostov
                       </p>
+                      <h5>In Silico MDCK Analogue Supplementary Material&#58;</h5>
+                      <ol type="i">
+                        <li>Source code <a href="http://biosystems.ucsf.edu/mdcksim/ISMA.zip">&#40;download&#41;</a></li>
+                        <li><a href="http://biosystems.ucsf.edu/mdcksim/README.txt" target="_blank">User manual</li>
+                      </ol>
                     </div>
                     </div>
                   </div>
