@@ -104,3 +104,13 @@ img {
   color: inherit;
   text-decoration: none;
 }
+
+/*.alphabetLinks p {
+  display: none;
+}*/
+
+
+.openDictionary p {
+  font-weight: 500;
+  font-size: 1em;
+}
