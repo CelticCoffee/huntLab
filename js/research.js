@@ -64,7 +64,7 @@ $(document).ready(function() {
   var agent = new Dictionary('agent');
   agent.wordType = 'n';
   agent.word = 'agent';
-  agent.defOfWord = '<ol type = &quot;1&quot; class = alphaLetters><li>The best definition of &quot;agent&quot; in the literature: &quot;An autonomous agent is a system situated within and a part of an environment that senses that environment and acts on it, over time, in pursuit of its own agenda and so as to effect what it senses in the future.&quot; [1] [1] Franklin, S. and Graesser, A. &quot;Is it an Agent, or just a Program?: A Taxonomy for Autonomous Agents&quot; in Intelligent Agents III. Agent Theories, Architectures, and Languages. ECAI&rsquot;96 Workshop (ATAL), Budapest, Hungary, August 12-13, 1996, Proceedings. Müller, Jörg P.; Wooldridge, Michael J.; Jennings, Nicholas R. (Eds.) 1997.</li><br><li>The IE root ag- &quot;to drive, draw, move.&quot; Also the IE root of &quot;axiom&quot;.</li><br><li>The definition of agent-based might seem to present a contradiction because it is ontological; but the definition of &quot;actor&quot; assumes the capability (or actuality) of an actor being observable. Ultimately, however, &quot;identifiability&quot; is an ontological characteristic that doesn&#44;t imply that an observer actually exists. So, there is no contradiction.</li></ol>';
+  agent.defOfWord = 'Notes&#58;<ol type = &quot;1&quot; class = alphaLetters><li>The best definition of &quot;agent&quot; in the literature: &quot;An autonomous agent is a system situated within and a part of an environment that senses that environment and acts on it, over time, in pursuit of its own agenda and so as to effect what it senses in the future.&quot; [1] [1] Franklin, S. and Graesser, A. &quot;Is it an Agent, or just a Program?: A Taxonomy for Autonomous Agents&quot; in Intelligent Agents III. Agent Theories, Architectures, and Languages. ECAI&rsquot;96 Workshop (ATAL), Budapest, Hungary, August 12-13, 1996, Proceedings. Müller, Jörg P.; Wooldridge, Michael J.; Jennings, Nicholas R. (Eds.) 1997.</li><br><li>The IE root ag- &quot;to drive, draw, move.&quot; Also the IE root of &quot;axiom&quot;.</li><br><li>The definition of agent-based might seem to present a contradiction because it is ontological; but the definition of &quot;actor&quot; assumes the capability (or actuality) of an actor being observable. Ultimately, however, &quot;identifiability&quot; is an ontological characteristic that doesn&#44;t imply that an observer actually exists. So, there is no contradiction.</li></ol>';
   agent.combo = agent.wordType + ':' + ' ' + agent.word + ':' + ' ' + agent.defOfWord;
 
   var agentBased = new Dictionary('agentBased');
@@ -142,10 +142,10 @@ $(document).ready(function() {
 
   //B//
 
-  var biomimetic = new Dictionary('biometic');
+  var biomimetic = new Dictionary('biomimetic');
   biomimetic.wordType = 'adj';
-  biomimetic.word = 'biometric';
-  biomimetic.defOfWord = 'to regard as a characteristic or quality of a person or thing, including a cause effect relationship. Syn. ascribe, impute.';
+  biomimetic.word = 'biomimetic';
+  biomimetic.defOfWord = 'measurably resembling multiple aspects of a referent biological system.';
   biomimetic.combo = biomimetic.wordType + ':' + ' ' + biomimetic.word + ':' + ' ' + biomimetic.defOfWord;
 
   var biomimeticAnalog = new Dictionary('biomimetic analog');
@@ -153,6 +153,12 @@ $(document).ready(function() {
   biomimeticAnalog.word = 'biomimetic analog';
   biomimeticAnalog.defOfWord = 'an analog aspiring to emulate aspects (including phenomenal, componential, causal, and organizational) of a referent biological system.';
   biomimeticAnalog.combo = biomimeticAnalog.wordType + ':' + ' ' + biomimeticAnalog.word + ':' + ' ' + biomimeticAnalog.defOfWord;
+
+  var biomimicry = new Dictionary('biomimicry');
+  biomimetic.wordType = 'n';
+  biomimetic.word = 'biomimicry';
+  biomimetic.defOfWord = 'the emulation or imitation of aspects of a referent biological system, usually for a particular scientific or engineering purpose; an instance of being biomimetic.';
+  biomimetic.combo = biomimetic.wordType + ':' + ' ' + biomimetic.word + ':' + ' ' + biomimetic.defOfWord;
 
   var bisimulation = new Dictionary('bisimulation');
   bisimulation.wordType = 'n';
@@ -311,7 +317,7 @@ $(document).ready(function() {
 
   var distributedSimulator = new Dictionary('distributed simulator');
   distributedSimulator.wordType = 'n';
-  distributedSimulator.word = 'derive';
+  distributedSimulator.word = 'distributed simulator';
   distributedSimulator.defOfWord = 'a simulator that uses multiple components &#40;possibly geographically remote&#41; to execute the actions of a simulation.';
   distributedSimulator.combo = distributedSimulator.wordType + ':' + ' ' + distributedSimulator.word + ':' + ' ' + distributedSimulator.defOfWord;
 
@@ -332,7 +338,7 @@ $(document).ready(function() {
   var extrapolate = new Dictionary('extrapolate');
   extrapolate.wordType = 'v';
   extrapolate.word = 'extrapolate';
-  extrapolate.defOfWord = 'a particular carrying out of a procedure or set of actions. An instance of computational inference.';
+  extrapolate.defOfWord = 'to infer or estimate by extending or projecting known information.';
   extrapolate.combo = extrapolate.wordType + ':' + ' ' + extrapolate.word + ':' + ' ' + extrapolate.defOfWord;
 
   var extrapolation = new Dictionary('extrapolation');
@@ -385,7 +391,7 @@ $(document).ready(function() {
   var homomorphism = new Dictionary('homomorphism');
   homomorphism.wordType = 'n';
   homomorphism.word = 'homomorphism';
-  homomorphism.defOfWord = 'a morphism exhibiting similarities between the two objects. Technically&#59; Let X and Y be objects such that Cx is a characteristic of X and Cy is a characteristic of Y. A morphism f&#59; X -> Y is a homomorphism if f&#40;Cx&#41; &#61; Cy.';
+  homomorphism.defOfWord = 'a morphism exhibiting similarities between the two objects. Technically&#58; Let X and Y be objects such that Cx is a characteristic of X and Cy is a characteristic of Y. A morphism f&#59; X -> Y is a homomorphism if f&#40;Cx&#41; &#61; Cy.';
   homomorphism.combo = homomorphism.wordType + ':' + ' ' + homomorphism.word + ':' + ' ' + homomorphism.defOfWord;
 
   var hypothesis = new Dictionary('hypothesis');
@@ -415,9 +421,9 @@ $(document).ready(function() {
 
   var interaction = new Dictionary('interaction');
   interaction.wordType = 'n';
-  interaction.word = 'inherit';
+  interaction.word = 'interaction';
   interaction.defOfWord = 'mutual influence or the reciprocal actions between more than one entity.';
-  interaction.combo = inherit.wordType + ':' + ' ' + inherit.word + ':' + ' ' + inherit.defOfWord;
+  interaction.combo = interaction.wordType + ':' + ' ' + interaction.word + ':' + ' ' + interaction.defOfWord;
 
   var interactiveSimulation = new Dictionary('interactive simulation');
   interactiveSimulation.wordType = 'n';
@@ -462,7 +468,7 @@ $(document).ready(function() {
   var modelingFormalism = new Dictionary('modeling formalism');
   modelingFormalism.wordType = 'n';
   modelingFormalism.word = 'modeling formalism';
-  modelingFormalism.defOfWord = 'a formalism for expressing models. Specifically, a modeling formalism is a set of symbols and rules that encourage the separation of the symbols from their referent and manipulation of those symbols independent from the referent, but where those symbols have definite unambiguous referents. Notes&#59; All computer models and simulations are formal systems. But, there exist modeling formalisms that are not formal systems. In particular, graphical models, &#40;unimplemented&#41; mathematical equations, etc. are not formal systems because they lack the mechanical procedure for assembling formulae. A mathematical equation can be considered a formula within the larger formal system of mathematics; but, by itself, it is not a formal system. It needs a machine or integrator to execute it. A graphical model is a formula but the machine by which new formulae are created resides in the thing or person doing the drawing.';
+  modelingFormalism.defOfWord = 'a formalism for expressing models. Specifically, a modeling formalism is a set of symbols and rules that encourage the separation of the symbols from their referent and manipulation of those symbols independent from the referent, but where those symbols have definite unambiguous referents. Notes&#58; All computer models and simulations are formal systems. But, there exist modeling formalisms that are not formal systems. In particular, graphical models, &#40;unimplemented&#41; mathematical equations, etc. are not formal systems because they lack the mechanical procedure for assembling formulae. A mathematical equation can be considered a formula within the larger formal system of mathematics; but, by itself, it is not a formal system. It needs a machine or integrator to execute it. A graphical model is a formula but the machine by which new formulae are created resides in the thing or person doing the drawing.';
   modelingFormalism.combo = modelingFormalism.wordType + ':' + ' ' + modelingFormalism.word + ':' + ' ' + modelingFormalism.defOfWord;
 
   var morphism = new Dictionary('morphism');
@@ -514,7 +520,7 @@ $(document).ready(function() {
   var plectics = new Dictionary('plectics');
   plectics.wordType = 'n';
   plectics.word = 'plectics';
-  plectics.defOfWord = 'the study of the separability of a system into constituent parts and the relationships between systemic and constituent phenomena. Notes&#59; Plectics was coined by Dr. Murray Gell-Mann in &quot;Let&#39;s Call It Plectics&quot;, an article in Complexity Vol. 1, No. 5, 1996. In that article, he states that the words &quot;simple&quot; and &quot;complex&quot; both descend from the Indo-European root &quot;plek-&quot;. Using it directly neatly avoids the cardinality that &quot;simple&quot;, denoting 1, and &quot;complex&quot;, denoting more than 1, specify. This makes it more appropriate as a moniker for studying the complexity, or lack thereof, of systems.';
+  plectics.defOfWord = 'the study of the separability of a system into constituent parts and the relationships between systemic and constituent phenomena. Notes&#58; Plectics was coined by Dr. Murray Gell-Mann in &quot;Let&#39;s Call It Plectics&quot;, an article in Complexity Vol. 1, No. 5, 1996. In that article, he states that the words &quot;simple&quot; and &quot;complex&quot; both descend from the Indo-European root &quot;plek-&quot;. Using it directly neatly avoids the cardinality that &quot;simple&quot;, denoting 1, and &quot;complex&quot;, denoting more than 1, specify. This makes it more appropriate as a moniker for studying the complexity, or lack thereof, of systems.';
   plectics.combo = plectics.wordType + ':' + ' ' + plectics.word + ':' + ' ' + plectics.defOfWord;
 
   var predict = new Dictionary('predict');
@@ -551,7 +557,7 @@ $(document).ready(function() {
   var resolution = new Dictionary('resolution');
   resolution.wordType = 'n';
   resolution.word = 'resolution';
-  resolution.defOfWord = 'a statement or explanation that resolves a thing or provides a method for resolving some thing. Technically, a resolution of a thing is a representation of the constituents of that thing and how those constituents interact.<br>Misc. important other definitions&#58; <ul class=romeoLetters><li>resolution&#40;music&#41;&#58;  in western tonal music theory is the &quot;need&quot; for a sounded note and/or chord to move from a dissonance or unstable sound to a more final or stable sounding one, a consonance. Resolution has a strong basis in tonal music, since atonal music generally contains a more constant level of dissonance and lacks a tonal center to resolve to.</li><li>resolution&#40;microscophy&#41;&#58;  the minimum distance between distinguishable objects.</li><li>resolution&#40;images&#41;&#58;  has something to do with graininess or how much information is (can be) contained in an image.</li></ul>'
+  resolution.defOfWord = 'a statement or explanation that resolves a thing or provides a method for resolving some thing. Technically, a resolution of a thing is a representation of the constituents of that thing and how those constituents interact.<br>Misc. important other definitions&#58; <ul class=romeoLetters><li>resolution &#40;music&#41;&#58;  in western tonal music theory is the &quot;need&quot; for a sounded note and/or chord to move from a dissonance or unstable sound to a more final or stable sounding one, a consonance. Resolution has a strong basis in tonal music, since atonal music generally contains a more constant level of dissonance and lacks a tonal center to resolve to.</li><li>resolution &#40;microscopy&#41;&#58;  the minimum distance between distinguishable objects.</li><li>resolution &#40;images&#41;&#58;  has something to do with graininess or how much information is (can be) contained in an image.</li></ul>'
   resolution.combo = resolution.wordType + ':' + ' ' + resolution.word + ':' + ' ' + resolution.defOfWord;
 
   var resolve = new Dictionary('resolve');
@@ -589,13 +595,14 @@ $(document).ready(function() {
   var simulant = new Dictionary('simulant');
   simulant.wordType = 'n';
   simulant.word = 'simulant';
-  simulant.defOfWord = '&#40;1a&#41; to have or take on the appearance, form, or sound of; imitate, mimic; &#40;1b&#41; to make in imitation of or as a substitute for; &#40;2&#41; to make a pretense of; feign; &#40;3&#41; to realize, act out, or effect a representation or model of. Technically, to execute a set of actions and show effects similar to another thing.'
+  simulant.defOfWord = 'A person who spends a lot of time creating, using, or studying simulation.'
   simulant.combo = simulant.wordType + ':' + ' ' + simulant.word + ':' + ' ' + simulant.defOfWord;
 
   var simulate = new Dictionary('simulate');
   simulate.wordType = 'v';
   simulate.word = 'simulate';
-  simulate.defOfWord = 'A person who spends a lot of time creating, using, or studying simulation.'
+
+  simulate.defOfWord ='&#40;1a&#41; to have or take on the appearance, form, or sound of; imitate, mimic; &#40;1b&#41; to make in imitation of or as a substitute for; &#40;2&#41; to make a pretense of; feign; &#40;3&#41; to realize, act out, or effect a representation or model of. Technically, to execute a set of actions and show effects similar to another thing.';
   simulate.combo = simulate.wordType + ':' + ' ' + simulate.word + ':' + ' ' + simulate.defOfWord;
 
   var simulation = new Dictionary('simulation');
@@ -650,7 +657,7 @@ $(document).ready(function() {
   var synthesis = new Dictionary('synthesis');
   synthesis.wordType = 'n';
   synthesis.word = 'synthesis';
-  synthesis.defOfWord = 'the combining of separate elements or substances to form a coherent whole; a complex whole so formed.<br>Notes&#59;<br><ol type=&quot;1&quot; class= sierraLetters><li>The word "synthesis" is usually but not always synonymous with &quot;construct&quot;.</li><li>The word &quot;synthesis&quot; literally parses into &quot;to set or put together&quot;. The implication is that synthesis is purposeful or attention is paid &#40;by the entity doing the synthesizing&#41; to the order and sequence of the composition.</li><li>There is a denotative requirement of a teleological end or &quot;coherent whole&quot; that is the result of the composition.</li><li>There is usually a connotation that synthetically created things are not naturally occurring. They are artificial and require an intelligent designer.  This is reinforced by the etymological connection to &quot;thesis&quotl;, which is a statement, description, or representation that is semantic. This distinguishes its use from &quot;construct&quot;.</li><li>There is no necessary requirement that synthesis imply concreteness. A synthetic object can be abstract.</li></ol>'
+  synthesis.defOfWord = 'the combining of separate elements or substances to form a coherent whole; a complex whole so formed.<br>Notes&#58;<br><ol type=&quot;1&quot; class= sierraLetters><li>The word "synthesis" is usually but not always synonymous with &quot;construct&quot;.</li><li>The word &quot;synthesis&quot; literally parses into &quot;to set or put together&quot;. The implication is that synthesis is purposeful or attention is paid &#40;by the entity doing the synthesizing&#41; to the order and sequence of the composition.</li><li>There is a denotative requirement of a teleological end or &quot;coherent whole&quot; that is the result of the composition.</li><li>There is usually a connotation that synthetically created things are not naturally occurring. They are artificial and require an intelligent designer.  This is reinforced by the etymological connection to &quot;thesis&quot;, which is a statement, description, or representation that is semantic. This distinguishes its use from &quot;construct&quot;.</li><li>There is no necessary requirement that synthesis imply concreteness. A synthetic object can be abstract.</li></ol>'
   synthesis.combo = synthesis.wordType + ':' + ' ' + synthesis.word + ':' + ' ' + synthesis.defOfWord;
 
 
@@ -663,7 +670,7 @@ $(document).ready(function() {
   var system = new Dictionary('system');
   system.wordType = 'n';
   system.word = 'system';
-  system.defOfWord = 'a group of interacting, interrelated, or interdependent elements forming a whole; functionally related group of elements, especially; a set of objects or phenomena grouped together for classification or analysis. Notes&#59; The use of the word &quot;system&quot; assumes a separation between things internal and external to the system. It implies that the object can be treated either as a collection of components or as a unit. The behaviors of components internal to the system are the generative mechanisms for the behavior of the system as a whole.'
+  system.defOfWord = 'a group of interacting, interrelated, or interdependent elements forming a whole; functionally related group of elements, especially; a set of objects or phenomena grouped together for classification or analysis. Notes&#58; The use of the word &quot;system&quot; assumes a separation between things internal and external to the system. It implies that the object can be treated either as a collection of components or as a unit. The behaviors of components internal to the system are the generative mechanisms for the behavior of the system as a whole.'
   system.combo = system.wordType + ':' + ' ' + system.word + ':' + ' ' + system.defOfWord;
 
   //T//
@@ -714,7 +721,7 @@ $(document).ready(function() {
   var verity = new Dictionary('verity');
   verity.wordType = 'n';
   verity.word = 'verity';
-  verity.defOfWord = 'the quality or condition of being true, factual, or trustworthy. Notes&#59; Verity is distinguishable from validity. Verity targets ontological truth, regardless of any arguments or belief. Validity targets effective formal systems and conclusions that follow from premises. The result is that, in M&#38;S, verification becomes the incontrovertible differences between a model and its implementation whereas validation becomes the arguable relationship between a representation and reality. One cannot verify a representation against reality because of the ontological wall. One can only validate a representation against reality. However, one can verify one representation against another. One can also validate one representation against another. Validation can be considered a weak type of verification or verification can be considered a strong type of validation. So, although they are distinguishable, they both target the same issue: trust.'
+  verity.defOfWord = 'the quality or condition of being true, factual, or trustworthy. Notes&#58; Verity is distinguishable from validity. Verity targets ontological truth, regardless of any arguments or belief. Validity targets effective formal systems and conclusions that follow from premises. The result is that, in M&#38;S, verification becomes the incontrovertible differences between a model and its implementation whereas validation becomes the arguable relationship between a representation and reality. One cannot verify a representation against reality because of the ontological wall. One can only validate a representation against reality. However, one can verify one representation against another. One can also validate one representation against another. Validation can be considered a weak type of verification or verification can be considered a strong type of validation. So, although they are distinguishable, they both target the same issue: trust.'
   verity.combo = verity.wordType + ':' + ' ' + verity.word + ':' + ' ' + verity.defOfWord;
 
   //W//
