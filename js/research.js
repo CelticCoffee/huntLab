@@ -5,7 +5,7 @@ $(document).ready(function() {
   //This opens the different articles//
   $('div.list-group').click(function(){
     $('div.list-group-item-text', this).show('slow');
-    console.log(this);
+
   });
 
   $('.specialHeader').click(function(){
@@ -25,16 +25,26 @@ $(document).ready(function() {
   })
 
   //Alphabet Objects//
-  var Dictionary = function Dictionary() {
-    this.wordType = {},
-    this.word = {},
-    this.defOfWord = {}
-    this.whatClass = function whatClass(word) {
-      var select = this.word.charAt(0);
-      return select;
+  // var Dictionary = function Dictionary() {
+  //   this.wordType = {},
+  //   this.word = {},
+  //   this.defOfWord = {}
+  //   this.whatClass = function whatClass(word) {
+  //     var select = this.word.charAt(0);
+  //     return select;
+  //   }
+  //   this.combo = this.wordType + ':' + ' ' + this.word + ':' + ' ' + this.defOfWord;
+  //   if(userInput.userInput == this.word){
+  //     console.log(this.combo);
+  //   }
+  // };
+
+  function Dictionary(wordType, word, defOfWord) {
+    this.wordType = wordType;
+    this.word = word;
+    this.defOfWord = defOfWord;
     this.combo = this.wordType + ':' + ' ' + this.word + ':' + ' ' + this.defOfWord;
-    }
-  };
+  }
 
   //A//
 
@@ -42,8 +52,9 @@ $(document).ready(function() {
   abstraction.wordType = 'n';
   abstraction.word = 'abstraction';
   abstraction.defOfWord = 'a description or representation abstracted from another description or representation.';
-  abstraction.combo = abstraction.combo = abstraction.wordType + ':' + ' ' + abstraction.word + ':' + ' ' + abstraction.defOfWord;
-  console.log(abstraction.whatClass());
+  abstraction.combo = abstraction.wordType + ':' + ' ' + abstraction.word + ':' + ' ' + abstraction.defOfWord;
+
+
 
 
   var abstraction2 = new Dictionary('abstraction');
@@ -51,7 +62,7 @@ $(document).ready(function() {
   abstraction2.word = 'abstraction';
   abstraction2.defOfWord = 'the process of removing concrete and particular detail from a description or representation. The concrete and particular details removed are left undescribed or unrepresented and subject to inference by the audience.';
   abstraction2.combo = abstraction2.wordType + ':' + ' ' + abstraction2.word + ':' + ' ' + abstraction2.defOfWord;
-  console.log(abstraction2.whatClass());
+
 
 
   var actor = new Dictionary('actor');
@@ -59,7 +70,7 @@ $(document).ready(function() {
   actor.word = 'actor';
   actor.defOfWord = 'an entity identifiable by an observer as a cause of an effect; an entity that performs &#91;a part&#93;; an entity that participates in a process or representation as in a pre-specified script. The general sense is that of an observer identifying an entity that acts or causes things to happen. Technically, such an entity is an OO object with the ability to schedule its own actions.';
   actor.combo = actor.wordType + ':' + ' ' + actor.word + ':' + ' ' + actor.defOfWord;
-  console.log(actor.combo);
+
 
   var agent = new Dictionary('agent');
   agent.wordType = 'n';
@@ -770,6 +781,14 @@ $(document).ready(function() {
 
   var wLetters = [weakBisimulation];
 
+  var allLetters = [aLetters, bLetters, cLetters, dLetters, eLetters, fLetters, gLetters, hLetters, iLetters, lLetters, mLetters, oLetters, pLetters, rLetters, sLetters, tLetters, uLetters, vLetters, wLetters];
+
+  // console.log(aLetters);
+  // console.log(Dictionary);
+  // console.log(aLetters[0]);
+  // console.log(bLetters[0].combo)
+
+
   var arrayOfUsedLetters = ['.a', '.b', '.c', '.d', '.e', '.f','.g','.h','.i','.l', '.m', '.o', '.p', '.r', '.s', '.t', '.u', '.v', '.w']
 
   //function to make each Letter entry in the dictionary//
@@ -806,7 +825,23 @@ $(document).ready(function() {
   letterPage(arrayOfUsedLetters[18], wLetters, 'whiskeyLetters');
 
 
-
+//Search Button for Dictionary//
+// var test = allLetters.indexOf(bLetters);
+// console.log(allLetters[2][2].word)
+//
+$('#dictionarySearch').click(function(){
+  var userInput = document.getElementById('userInput').value;
+  // var divTitle = userInput.charAt(0) + 'Letters';
+  for (var i = 0; i < allLetters.length; i++) {
+    for(var j = 0; j< allLetters[i].length; j++) {
+      // console.log(allLetters[i][j].word);
+      if(allLetters[i][j].word == userInput) {
+        console.log(allLetters[i][j].combo);
+        $('<p>' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary');
+      }
+    }
+  }
+})
 
 
 });
