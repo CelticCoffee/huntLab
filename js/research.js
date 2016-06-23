@@ -783,27 +783,25 @@ $(document).ready(function() {
 
   var allLetters = [aLetters, bLetters, cLetters, dLetters, eLetters, fLetters, gLetters, hLetters, iLetters, lLetters, mLetters, oLetters, pLetters, rLetters, sLetters, tLetters, uLetters, vLetters, wLetters];
 
-  // console.log(aLetters);
-  // console.log(Dictionary);
-  // console.log(aLetters[0]);
-  // console.log(bLetters[0].combo)
 
-
+//This is the index of letters in the html to click on//
   var arrayOfUsedLetters = ['.a', '.b', '.c', '.d', '.e', '.f','.g','.h','.i','.l', '.m', '.o', '.p', '.r', '.s', '.t', '.u', '.v', '.w']
 
-  //function to make each Letter entry in the dictionary//
-  var letterPage = (function(menuItem, array, divTitle) {
-    $(menuItem).one('click',function(){
-      for(var i = 0; i < array.length; i++) {
-        $('<p class=' + divTitle + '>' + array[i].combo + '</p>').appendTo('.openDictionary');
-      };
-      $(menuItem).click(function(){
-        $('.'+ divTitle + '').toggle();
-      })
-  });
+//This is the class assigned to each group of words according to letter//
+  var phoneticArray = ['alphaLetters', 'bravoLetters', 'charlieLetters', 'deltaLetters', 'ellaLetters', 'foxtrotLetters', 'golfLetters', 'hotelLetters', 'indiaLetters','limaLetters', 'mikeLetters', 'oscarLetters', 'papaLetters', 'romeoLetters', 'sierraLetters', 'tangoLetters', 'uniformLetters', 'victorLetters', 'whiskeyLetters'];
+
+
+//FUNCTIONS TO OPERATE GO BUTTON, ALPHABET MENU AND ENTER KEY//
+var letterPage = (function(arrayOfUsedLetters, allLetters, phoneticArray) {
+  $(arrayOfUsedLetters).click(function(){
+    for(var i = 0; i < allLetters.length; i++) {
+        $('<p class=' + phoneticArray + '>' + allLetters[i].combo + '</p>').appendTo('.openDictionary').prevUntil('.'+ phoneticArray + '').hide('slow');
+        };
+  })
 });
 
-  //apply this //
+  //apply the letterpage function //
+  //can probably write this more succinctly//
   letterPage(arrayOfUsedLetters[0], aLetters, 'alphaLetters');
   letterPage(arrayOfUsedLetters[1], bLetters, 'bravoLetters');
   letterPage(arrayOfUsedLetters[2], cLetters, 'charlieLetters');
@@ -825,23 +823,31 @@ $(document).ready(function() {
   letterPage(arrayOfUsedLetters[18], wLetters, 'whiskeyLetters');
 
 
-//Search Button for Dictionary//
-// var test = allLetters.indexOf(bLetters);
-// console.log(allLetters[2][2].word)
-//
-$('#dictionarySearch').click(function(){
-  var userInput = document.getElementById('userInput').value;
-  // var divTitle = userInput.charAt(0) + 'Letters';
-  for (var i = 0; i < allLetters.length; i++) {
-    for(var j = 0; j< allLetters[i].length; j++) {
-      // console.log(allLetters[i][j].word);
-      if(allLetters[i][j].word == userInput) {
-        console.log(allLetters[i][j].combo);
-        $('<p>' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary');
+//Definitions Populate via Enter Key//
+$('#userInput').keypress(function(event) {
+  if(event.keyCode === 13) {
+
+    var userInput = document.getElementById('userInput').value;
+    var firstLetter = userInput.charAt(0);
+      for(var h = 0; h < phoneticArray.length; h++ ){
+        // console.log(phoneticArray);
+        if (phoneticArray[h][0] == firstLetter) {
+          var labelForDiv = phoneticArray[h];
+        }
+      }
+
+    for (var i = 0; i < allLetters.length; i++) {
+      for(var j = 0; j< allLetters[i].length; j++) {
+        if(allLetters[i][j].word == userInput) {
+          $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary').siblings().hide();
+        }
+        $('#userInput').val('');
+
       }
     }
   }
 })
+
 
 
 });
