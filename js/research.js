@@ -4,8 +4,7 @@ console.log('testingJs')
 $(document).ready(function() {
   //This opens the different articles//
   $('div.list-group').click(function(){
-    $('div.list-group-item-text', this).show('slow');
-
+    $('div.list-group-item-text', this).toggle('slow');
   });
 
   $('.specialHeader').click(function(){
@@ -24,36 +23,27 @@ $(document).ready(function() {
     $('.secondSpecialText').toggle('slow');
   })
 
-  //Alphabet Objects//
-  // var Dictionary = function Dictionary() {
-  //   this.wordType = {},
-  //   this.word = {},
-  //   this.defOfWord = {}
-  //   this.whatClass = function whatClass(word) {
-  //     var select = this.word.charAt(0);
-  //     return select;
-  //   }
-  //   this.combo = this.wordType + ':' + ' ' + this.word + ':' + ' ' + this.defOfWord;
-  //   if(userInput.userInput == this.word){
-  //     console.log(this.combo);
-  //   }
-  // };
+  $('.specialHeader3').click(function(){
+    $('.specialText3').toggle('slow');
+  })
 
-  function Dictionary(wordType, word, defOfWord) {
+  function Dictionary(wordType, word, defOfWord, combo) {
     this.wordType = wordType;
     this.word = word;
     this.defOfWord = defOfWord;
-    this.combo = this.wordType + ':' + ' ' + this.word + ':' + ' ' + this.defOfWord;
+    this.combo = this.word + ':' + ' ' + this.wordType + ':' + ' ' + this.defOfWord;
   }
+
 
   //A//
 
-  var abstraction = new Dictionary('abstraction');
+
+
+  var abstraction = new Dictionary('abstraction')
   abstraction.wordType = 'n';
   abstraction.word = 'abstraction';
   abstraction.defOfWord = 'a description or representation abstracted from another description or representation.';
-  abstraction.combo = abstraction.wordType + ':' + ' ' + abstraction.word + ':' + ' ' + abstraction.defOfWord;
-
+  abstraction.combo = abstraction.word + ': ' + '&#40;' + abstraction.wordType + '&#41; ' + abstraction.defOfWord;
 
 
 
@@ -61,7 +51,7 @@ $(document).ready(function() {
   abstraction2.wordType = 'v';
   abstraction2.word = 'abstraction';
   abstraction2.defOfWord = 'the process of removing concrete and particular detail from a description or representation. The concrete and particular details removed are left undescribed or unrepresented and subject to inference by the audience.';
-  abstraction2.combo = abstraction2.wordType + ':' + ' ' + abstraction2.word + ':' + ' ' + abstraction2.defOfWord;
+  abstraction2.combo = abstraction2.word + ': ' + '&#40;' + abstraction2.wordType + '&#41; ' + abstraction2.defOfWord;
 
 
 
@@ -75,10 +65,10 @@ $(document).ready(function() {
   var agent = new Dictionary('agent');
   agent.wordType = 'n';
   agent.word = 'agent';
-  agent.defOfWord = 'Notes&#58;<ol type = &quot;1&quot; class = alphaLetters><li>The best definition of &quot;agent&quot; in the literature: &quot;An autonomous agent is a system situated within and a part of an environment that senses that environment and acts on it, over time, in pursuit of its own agenda and so as to effect what it senses in the future.&quot; [1] [1] Franklin, S. and Graesser, A. &quot;Is it an Agent, or just a Program?: A Taxonomy for Autonomous Agents&quot; in Intelligent Agents III. Agent Theories, Architectures, and Languages. ECAI&rsquot;96 Workshop (ATAL), Budapest, Hungary, August 12-13, 1996, Proceedings. Müller, Jörg P.; Wooldridge, Michael J.; Jennings, Nicholas R. (Eds.) 1997.</li><br><li>The IE root ag- &quot;to drive, draw, move.&quot; Also the IE root of &quot;axiom&quot;.</li><br><li>The definition of agent-based might seem to present a contradiction because it is ontological; but the definition of &quot;actor&quot; assumes the capability (or actuality) of an actor being observable. Ultimately, however, &quot;identifiability&quot; is an ontological characteristic that doesn&#44;t imply that an observer actually exists. So, there is no contradiction.</li></ol>';
+  agent.defOfWord = 'Notes&#58;<br>  1. The best definition of &quot;agent&quot; in the literature: &quot;An autonomous agent is a system situated within and a part of an environment that senses that environment and acts on it, over time, in pursuit of its own agenda and so as to effect what it senses in the future.&quot; [1] [1] Franklin, S. and Graesser, A. &quot;Is it an Agent, or just a Program?: A Taxonomy for Autonomous Agents&quot; in Intelligent Agents III. Agent Theories, Architectures, and Languages. ECAI&rsquot;96 Workshop (ATAL), Budapest, Hungary, August 12-13, 1996, Proceedings. Müller, Jörg P.; Wooldridge, Michael J.; Jennings, Nicholas R. (Eds.) 1997.<br><br>  2.  The IE root ag- &quot;to drive, draw, move.&quot; Also the IE root of &quot;axiom&quot;<br><br>  3.  The definition of agent-based might seem to present a contradiction because it is ontological; but the definition of &quot;actor&quot; assumes the capability (or actuality) of an actor being observable. Ultimately, however, &quot;identifiability&quot; is an ontological characteristic that doesn&#44;t imply that an observer actually exists. So, there is no contradiction.';
   agent.combo = agent.wordType + ':' + ' ' + agent.word + ':' + ' ' + agent.defOfWord;
 
-  var agentBased = new Dictionary('agentBased');
+  var agentBased = new Dictionary('agent based');
     agentBased.wordType = 'adj';
     agentBased.word = 'agent&#45;based';
     agentBased.defOfWord = 'something formulated with or built up from agents&#59; a statement whose components are agents or whose salient characteristics arise from agents. Agents in this sense are akin to axioms and assertions.';
@@ -90,7 +80,7 @@ $(document).ready(function() {
   agentDirected.defOfWord = 'a process or statement guided, constrained, or controlled by an agent. Technically, this is ontological and is agnostic about how a system is viewed or thought about.';
   agentDirected.combo = agentDirected.wordType + ':' + ' ' + agentDirected.word + ':' + ' ' + agentDirected.defOfWord;
 
-  var agentOriented = new Dictionary('agentOriented');
+  var agentOriented = new Dictionary('agent oriented');
   agentOriented.wordType = 'adj';
   agentOriented.word = 'agent&#45;oriented';
   agentOriented.defOfWord = 'a statement which is easy to understand, interpret, or develop in terms of agents. Technically, this is epistemological and describes the way a system is thought about or understood and is agnostic about the system&#39;s ontological status.';
@@ -792,11 +782,15 @@ $(document).ready(function() {
 
 
 //FUNCTIONS TO OPERATE GO BUTTON, ALPHABET MENU AND ENTER KEY//
+
+//Function for the Alphabet Page displays//
 var letterPage = (function(arrayOfUsedLetters, allLetters, phoneticArray) {
   $(arrayOfUsedLetters).click(function(){
     for(var i = 0; i < allLetters.length; i++) {
-        $('<p class=' + phoneticArray + '>' + allLetters[i].combo + '</p>').appendTo('.openDictionary').prevUntil('.'+ phoneticArray + '').hide('slow');
+        $('<p class=' + phoneticArray +'>' + allLetters[i].combo +  '</p>').appendTo('.openDictionary').prevUntil('.'+ phoneticArray + '').hide('slow');
         };
+        //adds highlight CSS to the selected letter in the menu//
+  $(arrayOfUsedLetters).addClass('sillyStyle').siblings().removeClass('sillyStyle');
   })
 });
 
@@ -822,31 +816,51 @@ var letterPage = (function(arrayOfUsedLetters, allLetters, phoneticArray) {
   letterPage(arrayOfUsedLetters[17], vLetters, 'victorLetters');
   letterPage(arrayOfUsedLetters[18], wLetters, 'whiskeyLetters');
 
+//Try function for highlighting defintion//
 
+
+
+
+//Create function for fetching definition of word in search box//
+var showDefinition = (function(userInput) {
+  var userInput = document.getElementById('userInput').value;
+  //identify word in dictionary and match with its object//
+  var firstLetter = userInput.charAt(0);
+    for(var h = 0; h < phoneticArray.length; h++ ){
+      // console.log(phoneticArray);
+      if (phoneticArray[h][0] == firstLetter) {
+        var labelForDiv = phoneticArray[h];
+      }
+    }
+    //add divClass to the displayed word and definition//
+  for (var i = 0; i < allLetters.length; i++) {
+    for(var j = 0; j< allLetters[i].length; j++) {
+      if(allLetters[i][j].word == userInput) {
+        $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary').addClass('styled-words').siblings().hide();
+      }
+    //Clear the text box//
+    $('#userInput').val('');
+    }
+  }
+});
+
+//Calling the function to show definitions based on user action//
 //Definitions Populate via Enter Key//
 $('#userInput').keypress(function(event) {
   if(event.keyCode === 13) {
-
-    var userInput = document.getElementById('userInput').value;
-    var firstLetter = userInput.charAt(0);
-      for(var h = 0; h < phoneticArray.length; h++ ){
-        // console.log(phoneticArray);
-        if (phoneticArray[h][0] == firstLetter) {
-          var labelForDiv = phoneticArray[h];
-        }
-      }
-
-    for (var i = 0; i < allLetters.length; i++) {
-      for(var j = 0; j< allLetters[i].length; j++) {
-        if(allLetters[i][j].word == userInput) {
-          $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary').siblings().hide();
-        }
-        $('#userInput').val('');
-
-      }
-    }
+    showDefinition(userInput);
+    console.log(userInput);
   }
 })
+
+//And for Go Button//
+$('#dictionarySearch').click(function() {
+  showDefinition(userInput);
+})
+
+
+
+
 
 
 

@@ -48,6 +48,13 @@ img {
 
 .alphabetLinks li{
   display: inline-block;
+  font-size: 1.5em;
+  padding-right: 1.25em;
+  padding-bottom: 1em;
+}
+
+.alphabetLinks a {
+  color: red;
 }
 
 .smallMedia {
@@ -71,6 +78,10 @@ img {
   display: none;
 }
 
+.specialText3 {
+  display: none;
+}
+
 .specialSection {
   padding: 1em;
   border-radius: 4px;
@@ -91,6 +102,15 @@ img {
   padding-bottom: .5em;
 }
 
+.specialSection3 {
+  padding: 1em;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  box-shadow: 0 1px 2px rgba(0,0,0,.075);
+  margin-bottom: 20px;
+  float: left;
+  padding-bottom: .5em;
+}
 
 .sillicoSub li {
   margin-bottom: 1em;
@@ -105,12 +125,21 @@ img {
   text-decoration: none;
 }
 
-/*.alphabetLinks p {
-  display: none;
-}*/
-
-
 .openDictionary p {
-  font-weight: 500;
-  font-size: 1em;
+  font-weight: semi-bold;
+  font-size: .95em;
+}
+
+.styled-words {
+  background-color: lightGray;
+  padding: 2em;
+  border: 2px solid gray;
+}
+
+.sillyStyle a {
+  font-size: 115%;
+  text-decoration: none;
+  color: green;
+  padding: .25em;
+  background-color: lightGray;
 }
