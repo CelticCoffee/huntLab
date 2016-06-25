@@ -1,34 +1,81 @@
-.blackHeader {
-padding: 1.5em;
-background-color: black;
+.heroRow {
+  color: black;
 }
 
-img {
-  width: 100%;
+.col-xs-12 {
+  margin-top: -25px;
+  background-color: black;
+  position: relative;
 }
 
-.researchArticles {
-  padding: 2em;
-}
-
-.list-group {
-  padding: 1em;
-  /*border-bottom: 2px solid gray;*/
-}
-
-.list-group-item-heading {
-  padding-bottom: 1em;
+.heroImage {
+  position: relative;
 }
 
 
-.alphabetLinks li{
-  display: inline-block;
+.heroText {
+  color: white;
+  position: absolute;
+  top: 5%;
+  left: 40px;
+  /*display: none;*/
 }
 
-.smallMedia {
-  width: 200px;
+.heroFollow {
+  color: white;
+  position: absolute;
+  top: 22%;
+  left: 300px;
+
 }
 
-.hepatocyteImgs li {
-  display: inline;
+
+@media screen and (max-width: 769px) {
+  .col-xs-12 {
+    margin-top: -25px;
+    padding-bottom: 3em;
+  }
+
+  .heroText {
+    font-size: 1em;
+    left: 30px;
+  }
+
+
+  .heroFollow {
+    font-size: .95em;
+    left: 100px;
+    top: 65%;
+  }
+
+
+}
+
+@media screen and (max-width: 415px) {
+  .heroText {
+    font-size: .9em;
+  }
+
+
+  .heroFollow {
+    left: 150px;
+    top: 60%;
+    font-size: .75em;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .col-xs-12 {
+    padding-bottom: 3em;
+  }
+
+
+  .heroText {
+    margin-top: 1em;
+    top: 0;
+  }
+
+  .heroFollow {
+    left: 100px;
+  }
 }
