@@ -110,18 +110,18 @@
 
 .questionSlides h4 {
   padding-top: 1em;
-  color: darkred;
+  color: #8B0000;
   font-family: 'Neucha', serif;
   font-size: 1.5em;
   line-height: 1.75;
 }
 
 .modal-content h5 {
-  color: darkRed;
+  color: #8B0000;
 }
 
 .breadcrumb li h5 {
-  color: darkRed;
+  color: #8B0000;
 }
 
 
