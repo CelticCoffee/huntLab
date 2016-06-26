@@ -2,7 +2,7 @@
   color: black;
 }
 
-.col-xs-12 {
+.heroColumn {
   margin-top: -25px;
   background-color: black;
   position: relative;
@@ -29,9 +29,105 @@
 
 }
 
+.huntLabArticle {
+  display: block;
+  text-align: center;
+}
+
+.aboutHuntLab {
+  padding: 1em;
+  font-size: .95em;
+}
+
+.centered {
+  text-align: center;
+}
+
+#moreModelingInfo {
+  margin-bottom: 2em;
+}
+
+.expandedModelingText {
+  display: none;
+}
+
+.projectObjectives li {
+  font-size: 1.25em;
+  padding-top: .25em;
+}
+
+.researchCredit {
+  padding-top: 0;
+  font-size: .85em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.objectivesArticle {
+  display: none;
+}
+
+.modelExperiments {
+  display: none;
+}
+
+.objectODesign {
+  display: none;
+}
+
+.occamsRazorArticle {
+  display: none;
+}
+
+.iterativeArticle {
+  display: none;
+}
+
+.questionCount {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #708090;
+}
+
+#moreModelingInfo {
+  background-color: #708090;
+  color: white;
+  border-color: #708090;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+  color: white;
+  line-height: 1.5em;
+}
+
+.questionSlides p {
+  font-size: 1.25em;
+  line-height: 2;
+}
+
+.questionSlides h4 {
+  padding-top: 1em;
+  color: darkred;
+  font-family: 'Neucha', serif;
+  font-size: 1.5em;
+  line-height: 1.75;
+}
+
+.modal-content h5 {
+  color: darkRed;
+}
+
+.breadcrumb li h5 {
+  color: darkRed;
+}
+
+
 
 @media screen and (max-width: 769px) {
-  .col-xs-12 {
+  .heroColumn {
     margin-top: -25px;
     padding-bottom: 3em;
   }
@@ -48,7 +144,6 @@
     top: 65%;
   }
 
-
 }
 
 @media screen and (max-width: 415px) {
@@ -62,10 +157,19 @@
     top: 60%;
     font-size: .75em;
   }
+
+  .slick-next {
+    right: -10px;
+  }
+
+  .slick-prev {
+    left: -10px;
+  }
+
 }
 
 @media screen and (max-width: 376px) {
-  .col-xs-12 {
+  .heroColumn {
     padding-bottom: 3em;
   }
 
@@ -78,4 +182,13 @@
   .heroFollow {
     left: 100px;
   }
+
+  .questionSlides .centered p {
+    font-size: 1.15em;
+  }
+
+  .questionSlides .centered h4 {
+    font-size: 1.25em;
+  }
+
 }

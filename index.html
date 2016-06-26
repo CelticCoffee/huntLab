@@ -9,6 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Neucha|Permanent+Marker" rel="stylesheet">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -42,8 +43,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Research<span class="sr-only">(current)</span></a></li>
+              <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="research.html">Research</a></li>
               <li><a href="#">People</a></li>
               <li><a href="#">Collaboration</a></li>
               <li><a href="#">Links</a></li>
@@ -54,10 +55,9 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-
       <div class="container-fluid">
         <div class="row heroRow">
-        <div class="col-xs-12">
+        <div class="col-xs-12 heroColumn" id="topTarget">
           <div class="heroImage">
             <div><img class="img-responsive" src="img/sliderImgs/firstCellIteration.jpg" alt="first cell animation"></div>
             <div><img class="img-responsive" src="img/sliderImgs/secondCellIteration.jpg" alt="second cell animation"></div>
@@ -66,14 +66,138 @@
           </div>
           <h3 class="heroText">BioSystems Group at UCSF &#58; the Hunt Lab</h3>
           <h4 class="heroFollow">a primary site for systems biology research at UCSF</h4>
+          </div>
+        </div>
+        <div class="row aboutRow">
+          <div class="col-xs-12">
+            <ol class="breadcrumb">
+              <li><h5>About</h5></li>
+            </ol>
+            <h2 class="huntLabArticle">About the Hunt Lab</h2>
+            <p class="aboutHuntLab" id="aboutTarget">Research in the Biosystems group can be broadly characterized as a blend of Bioengineering, Computational Biology (including Bioinformatics and <a data-toggle="modal" data-target=".mainDefModal">Computational Therapeutics</a>), Systems Biology, and <a data-toggle="modal" data-target=".mainDefModal">Therapeutic Engineering</a>. It is uniquely interdisciplinary. Our goal is to use and create computational and informatic approaches to discover useful new biological knowledge. We seek novel approaches that will accelerate drug development and enable therapeutic advances, optimization, and individualization.<br><br>No two members of the group have the same interests, expertise or research focus.  Nevertheless, a goal for each of us is to generate new knowledge that can be translated into either real, tangible improvements in healthcare or into the drug discovery and development.<br><br>Our attention is currently drawn to aspects of the following interrelated problems and issues.<br><br>A goal of computational biology is to develop and apply modeling and computational simulation techniques to study biological organisms and their various organs and systems. Because biological organisms are uniquely adaptable, no one model will ever be able to represent more than a tiny subset of a biological systems full range of behaviors.To more realistically simulate these systems we need a new class of models. A new class of event-driven models currently under development in this lab meet this need.</p>
 
+            <!-- Small modal -->
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Small modal</button> -->
+
+            <div class="modal fade mainDefModal" tabindex="-1" role="dialog" aria-labelledby="mainDefModalLabel">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h5>Computational Therapeutics</h5>
+                  <p>
+                   Referred to by some as in silico pharmacology, is an emerging biomedical field. It is concerned with the development of techniques for using software to collect, manipulate and link biological and medical data from diverse sources. It is also concerned with the use of such information in simulation models to make predictions or therapeutically relevant discoveries or advances.</p>
+                  <h5>Therapeutic Engineering</h5>
+                  <p>The combined application of the principles of mathematics, engineering, physics, chemistry, and biology to better understand human pharmacology, physiology, toxicology, and pathophysiology with a vision for development of better, more individualized, outcomes-focused, therapeutic treatments.</p>
+                </div>
+              </div>
+            </div>
 
           </div>
 
         </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <ol class="breadcrumb" id="mainBreadCrumb">
+              <li><h5>Modeling</h5></li>
+            </ol>
+
+            <h2 class="huntLabArticle">Event Driven Modeling</h2>
+            <p class="aboutHuntLab" id="modelingTarget">
+              The following material relates to a new class of event-driven models that is currently under development at UCSF in the Hunt Lab.<br><br>
+
+              Advances in computer science have opened a door to entirely new strategies for simulating and modeling biological systems. To test current concepts about system and organ function within organisms in normal and disease states we need a new class of discrete, event-driven simulation models that achieve a higher level of biological realism across multiple scales, while being suffi­ciently flexible to represent different aspects of the biology. We have developed and are implementing such models. The models use Object-Oriented Design and are agent-based. Four projects are underway. New projects are being considered. The domains of the four projects are the blood-brain barrier, the liver (currently focused on clearance and metabolism of drugs), the intestinal barrier to absorption, and tumor spheroids (an in vitro cancer model).</p>
+            <div class="centered">
+              <button type="button" class="btn" id="moreModelingInfo">Learn More</button>
+          </div>
+          <div class="aboutHuntLab expandedModelingText">
+            <ol class="breadcrumb">
+              <li class="modelingSubMenu"><a href="#">Modeling</a></li>
+              <li><a href="#">Project Objectives</a></li>
+            </ol>
+            <h4 class="huntLabArticle" id="objectivesTab"><a href="#">Project Objectives</a></h4>
+            <ul class="projectObjectives objectivesArticle">
+              <li>Develop new ideas on advancing the scientific method for simulation science within computational biology.</li>
+              <li>Define a new class of biological simulation models that can achieve a higher level of biological realism because they are event-driven.</li>
+              <li>Use a middle-out model design strategy that begins with a primary functional unit.</li>
+              <li>Describe models that can represents the primary parenchymal units of the rat liver and that can be extended to account for the hepatic disposition of solutes.</li>
+              <li>Develop models that are composed of components that are easily joined and disconnected, and that are replaceable and reusable.</li>
+              <li>Design and build a multitier, in silico apparatus to support iterative experimentation on multiple models. We refer to it as FURM: Functional Unit Representation Method.
+              Experiments Using Computer Models</li>
+            </ul>
+
+            <h4 class="huntLabArticle" id="experimentsTab"><a href="#">Experiments Using Computer Models</a></h4>
+            <p class="aboutHuntLab modelExperiments">Well-designed experiments on biological components have in mind a very narrow range of plausible outcomes. Such experiments hone the specific outcome to such a fine grain, that one is intentionally examining only a very tiny slice of that component’s potential behavior. The naturally occurring component is confined by the experimental design and methodology to essentially a single well-defined function or to exhibiting a single attribute. Consequently, an in silico experiment, in order to validate against the in vitro experimental results, need only model the responses that characterize that tiny, well-defined function.<br><br>
+            Well-designed experiments on biological components have in mind a very narrow range of plausible outcomes. Such experiments hone the specific outcome to such a fine grain, that one is intentionally examining only a very tiny slice of that component’s potential behavior. The naturally occurring component is confined by the experimental design and methodology to essentially a single well-defined function or to exhibiting a single attribute. Consequently, an in silico experiment, in order to validate against the in vitro experimental results, need only model the responses that characterize that tiny, well-defined function.<br>
+            <br>However, the same biological components can be easily manipulated in completely different experimental procedures to study some other well-defined function that may bear little resemblance to the one exhibited in the other experimental context. This vague property of arbitrary interpretation is characteristic of living systems. However, in silico models do not have this property. In fact, many in silico models cannot easily be re-used in another experimental context because their logic is inherently tied to the experimental methodology and results that motivated their creation. The FURM represents progress in creating more realistic in silico models. It introduces methods that enable arbitrary interpretation and reuse of any given component in the system’s framework.<br><br>
+            The FURM and the in silico IPRL (isolated perfused rat liver) particular instance of that method is a step toward the goal of building in silico biological systems whose behavior can more closely mimic that of living biological systems at what ever level of granularity is demanded by the problem at hand. Other efforts to do this consist mostly of the integration and concurrent use of expert-designed models. The IUPS Physiome Project [Hunter 2001] and the disease models developed by Entelos [Stix 2003] are two well-known examples. Experts construct a sub-model of a specific biological component that has a pre-specified set of biological functions or roles. Several sub-models may be integrated to create one big model that is intended to behave like the corresponding biological component. If the set of biological responses simulated by the components is incomplete, then one or more new, redesigned sub-models must be built and integrated into the larger model. No capability for automated reparameterization or redesign is provided. FURM make progress towards such a capability.</p>
+
+            <p class="researchCredit aboutHuntLab modelExperiments">
+              Hunter, P.J., Nielsen, P.M.F., and Bullivant, D. The IUPS Physiome Project, in Bock, Gregoru, and Goode, Jamie A. (Eds.). 'In Silico' Simulation of Biological Processes (Novartis Foundation Symposium No. 247), Wiley, Chichester, 207- 221, 2002.<br><br>
+              Stix, Gary. Reverse-Engineering Clinical Biology. Scientific Ameriacn, 28-30, February 2003.
+            </p>
+
+              <h4 class="huntLabArticle" id="ooDesignTab"><a href="#">Object-Oriented Design</a></h4>
+              <p class="aboutHuntLab objectODesign">
+              FURM depends upon Object-Oriented Design (OOD). Objects are instances of classes with both state and behavior. However, some OOD principles are purposefully broken to support the method. For example, when encapsulation is not adhered to strictly we can support some measurement and control operations.<br><br>
+              Agents are objects that have the ability to add, remove, and modify events. Philosophically, they are objects that have their own motivation and can initiate causal chains, as opposed to just participating in a sequence of events something else initiated. However, we will usually refer to agents in the prior, more generic sense. Models are agents whose purpose is to mimic some other agent or system.</p>
+              <h4 class="huntLabArticle" id="occamTab"><a href="#">Occam&#39;s Razor</a></h4>
+              <p class="aboutHuntLab occamsRazorArticle">
+              Many scientists engaged in biological modeling adopt as an important guiding principle some version of the original Occam’s Razor principle. Two versions are frequently encountered: a) use the simplest explanation consistent with the data and b) use the simplest model consistent with the data. An often-encountered extension of b is to prefer the model that gives the best “fit” to the data using the fewest number of parameters. However, upon examination we find that the following is the more accurate statement of the Occam's Razor principle: a problem should be stated in its basic and simplest terms. In science, the simplest theory that fits the facts of a problem, with the fewest critical assumptions, is the one that should be selected. A model should be viewed with caution if it is simplified by making assumptions that require important data about that system, or properties of the system, to be ignored. The challenge is to systematically improve the model by accounting for as much of the available data as possible, while systematically reducing the number of assumptions.<br><br>
+              Models often only mimic particular, isolated, phenomena. The data set is a small subset of the real and potential behavior space. The models that treat those data have solution sets that are very small subsets of the real and potential behavior space of the referent. Hence, the choice of data to treat plus adherence to the Occam's razor principle (especially the two earlier versions) leads to brittle models that may serve a specific need well, but which are very limited in their power and usefulness.
+              <br><br>
+              If we interpret Occam's razor as being guided by the experimental procedure (problem statement) rather than the broad-spectrum phenomena or some slice of data with implications to phenomena, then the principle is more useful. Problem-driven (as opposed to data-driven) usage of Occam’s razor allows for more flexible models that draw on various kinds of data, various formulations of hypotheses, various other heuristics, etc. Data set-driven usage of Occam's razor restricts the models (built to match that data) to that particular data set and its peculiarities.</p>
+              <h4 class="huntLabArticle" id="iterativeTab"><a href="#">Iterative Modeling</a></h4>
+              <p class="aboutHuntLab iterativeArticle">
+              Modelers always use an iterative technique to approach a valid model. Often, however, the evolution of the model is ad-hoc and not reproducible. By embracing the standard of always iterating and creating new models, FURM encourages the creation of evolutionary operators for models. The robustness and efficacy of these operators depends, fundamentally, on a meaningful parameterization of the model. When starting out with a new functional unit to be modeled, an initial unrefined parameterization is chosen based on available experimental data. Components are added according to that initial parameterization. If the resulting models are not satisfactory, any given piece of the model may be modified or reparameterized with minimal impact on the other components of the model. This continues until the model provides reasonable coverage of the targeted solution space, according to the measures defined.<br><br>
+              Once an adequate initial parameterization is found, the parameter space is searched for solution sets that are partitioned according to defined measures. Bounds for the parameter space are then set to indicate the regions of the solution set for which this model validates.
+              <br><br>
+              When the time comes to change the model in some way, there are two options, change the parameterization or change the implementation. Changes to the parameterization fundamentally alter the model and require the complete process of refinement mentioned above. Changes to the implementation, including the structure of the model, without changing the parameterization can also be made. If those changes lead to large shifts in the solution set produced by the model, then the parts of the implementation that were changed should be isolated and added to the parameter set. Eventually, this process leads to a terminal set of parameter values and an operator set of combinations of those parameters, producing a prescriptive encoding and a set of evolutionary operators for the model. Different models need not have the same parameterization. They only need the same underlying space onto which their respective solution sets can be projected.
+              <br><br>
+              For additional details email a request to <a href="mailto:a.hunt@ucsf.edu">Prof. Hunt.</a></p>
+              <div class="centered">
+                <button type="button" class="btn btn-danger closeText"> Back to Main</button>
+            </div>
+          </div>
+        </div>
       </div>
-
-
+      <div class="row">
+        <div class="col-xs-12">
+          <ol class="breadcrumb">
+            <li><h5>Questions</h5></li>
+          </ol>
+          <h2 class="huntLabArticle">Questions That Drive the Hunt Lab</h2>
+          <div class="jumbotron">
+            <div class="questionSlides">
+              <div class="centered">
+                <h2 class="questionCount">1.</h2>
+                <p>Fueled by technological innovation, the biomedical sciences are poised to benefit from a tidal wave of data.<br>
+                Massive datasets and warehouses of such data are increasingly available.</p>
+              <h4>How does one organize, visualize, and utilize massive heterogeneous datasets to make better scientific, engineering, and medical decisions?</h4>
+              </div>
+              <div class="centered">
+                <h2 class="questionCount">2.</h2>
+                <p>At all levels of organization, from gene expression to groups of genetically diverse individuals, all biosystems exhibit variability.</p>
+                <h4>Why and how is it essential?<br> How do biological pathways, networks and systems interact to account for and manage biological variability?<br> What is the role of biological variability in health and in disease? <br>How should we represent such variability within the above new class of models?</h4>
+              </div>
+              <div class="centered">
+                <h2 class="questionCount">3.</h2>
+                <p>We all know that a drug treatment will not produce the same effect in all people.<br>We believe that optimally individualized treatments are essential for improved, more cost-effective health care.
+              </p>
+              <h4>
+                How can basic knowledge of biological pathways, networks, and systems be harnessed within the above new class of models?<br>How can we use such models to guide individual optimization of currently available and emerging treatments?
+              </h4>
+            </div>
+            <div class="centered">
+              <h2 class="questionCount">4.</h2>
+              <p>Currently, the drug development and discovery process seeks new drugs that will work reasonably well in most people.</p>
+              <h4>Is there a better, more cost effective approach, one that from the start preserves and amplifies legacy expertise while drawing upon available knowledge to develop new drugs that are optimized for, and targeted to, definable subsets of the population?</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
           <script src="js/jquery-migrate-1.4.1.min.js"></script>
