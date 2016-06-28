@@ -1,0 +1,143 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+/*Top Image Fading in and out*/
+
+.wordFade h2 {
+  /*margin-left: 1em;*/
+  display: inline-block;
+}
+
+.wordFade h4 {
+  /*margin-left: 1em;*/
+  display: inline-block;
+}
+
+.wordFade h3 {
+  /*margin-left: 1em;*/
+  display: inline-block;
+}
+
+
+.wordFade p {
+  /*margin-left: 1em;*/
+  display: inline-block;
+}
+
+.centered h1 {
+  margin-top: 3em;
+}
+
+.huntLabInterestsOne {
+  height: 400px;
+  font-size: 2em;
+  text-align: center;
+  color: white;
+  background: gray;
+  padding: 40px;
+  /*padding-top: 15px;*/
+  overflow: hidden;
+}
+
+.secondLab {
+    height: 400px;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background: gray;
+    padding: 40px;
+    /*padding-top: 15px;*/
+    display: none;
+    overflow: hidden;
+}
+
+.people {
+    height: 400px;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 40px;
+    /*padding-top: 15px;*/
+    display: none;
+    overflow: hidden;
+}
+
+.sneaky {
+  display:none;
+}
+
+.huntRow {
+  margin-top: 1em;
+  background: #F5F5F5;
+  border-radius: 5px;
+}
+
+/*People Content*/
+.huntPic {
+  padding: 2em;
+}
+
+.huntBioContinued {
+  display: none;
+}
+
+.huntInfo {
+  margin-right: 4em;
+}
+
+.staffInfo {
+  margin-left: 2em;
+}
+
+.staffInfo h4 {
+  margin-top: 1em;
+}
+
+.mailIcon {
+  width: 22px;
+}
+
+.staffInfo h3 {
+  color: #8B0000;
+}
+
+.huntContainer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 770px) {
+  .wordFade h3 {
+    padding-bottom: 1em;
+  }
+
+  .wordFade h2 {
+    padding-bottom: 1em;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .huntContainer {
+    margin-left: 2em;
+  }
+}
+
+@media screen and (min-width: 436px) {
+  .container-fluid .col-xs-12 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 542px) {
+  .wordFade h2 {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+
+  .wordFade h3 {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+}
