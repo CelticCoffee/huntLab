@@ -5,25 +5,28 @@
 /*Top Image Fading in and out*/
 
 .wordFade h2 {
-  /*margin-left: 1em;*/
+  margin-left: 1em;
+  padding-right: 2em;
   display: inline-block;
 }
 
 .wordFade h4 {
-  /*margin-left: 1em;*/
+  padding-right: 2em;
   display: inline-block;
 }
 
 .wordFade h3 {
-  /*margin-left: 1em;*/
+  padding-right: 2em;
   display: inline-block;
 }
 
 
 .wordFade p {
-  /*margin-left: 1em;*/
+  padding-right: 2em;
   display: inline-block;
+  font-size: 1em;
 }
+
 
 .centered h1 {
   margin-top: 3em;
@@ -63,6 +66,7 @@
     display: none;
     overflow: hidden;
 }
+
 
 .sneaky {
   display:none;

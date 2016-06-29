@@ -207,7 +207,7 @@ $(document).ready(function() {
   concurrentSimulator.wordType = 'n';
   concurrentSimulator.word = 'concurrent simulator';
   concurrentSimulator.defOfWord ='a simulator that facilitates concurrent simulations.';
-  calibration.combo = calibration.word + ':<br>' + '&#40;' + calibration.wordType + '&#41; ' + calibration.defOfWord;
+  concurrentSimulator.combo = concurrentSimulator.word + ':<br>' + '&#40;' + concurrentSimulator.wordType + '&#41; ' + concurrentSimulator.defOfWord;
 
   var congruence = new Dictionary('congruence');
   congruence.wordType = 'adj';
@@ -829,7 +829,8 @@ var showDefinition = (function(userInput) {
   for (var i = 0; i < allLetters.length; i++) {
     for(var j = 0; j< allLetters[i].length; j++) {
       if(allLetters[i][j].word == userInput) {
-        $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>').appendTo('.openDictionary').addClass('styled-words').siblings().hide();
+        var activeWord = $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>');
+        $(activeWord).appendTo('.openDictionary').addClass('styled-words').siblings().hide();        
       }
     //Clear the text box//
     $('#userInput').val('');
