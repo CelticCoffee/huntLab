@@ -37,18 +37,19 @@ $(document).ready(function() {
 
   //A//
   var abstraction = new Dictionary('abstraction')
-  abstraction.wordType = 'n';
+  abstraction.wordType = '1st&#58; n, 2nd&#58; v' ;
   abstraction.word = 'abstraction';
-  abstraction.defOfWord = 'a description or representation abstracted from another description or representation.';
-  abstraction.combo = abstraction.word + ':<br> ' + '&#40;' + abstraction.wordType + '&#41; ' + abstraction.defOfWord;
+  abstraction.defOfWord = 'noun&#58;  a description or representation abstracted from another description or representation.';
+  abstraction.additional = 'verb&#58; the process of removing concrete and particular detail from a description or representation. The concrete and particular details removed are left undescribed or unrepresented and subject to inference by the audience.';
+  abstraction.combo = abstraction.word + ':<br> ' + '&#40;' + abstraction.wordType + '&#41; ' + abstraction.defOfWord + '<br>' +  abstraction.additional;
 
 
 
-  var abstraction2 = new Dictionary('abstraction');
-  abstraction2.wordType = 'v';
-  abstraction2.word = 'abstraction';
-  abstraction2.defOfWord = 'the process of removing concrete and particular detail from a description or representation. The concrete and particular details removed are left undescribed or unrepresented and subject to inference by the audience.';
-  abstraction2.combo = abstraction2.word + ':<br> ' + '&#40;' + abstraction2.wordType + '&#41; ' + abstraction2.defOfWord;
+  // var abstraction2 = new Dictionary('abstraction');
+  // abstraction2.wordType = 'v';
+  // abstraction2.word = 'abstraction';
+  // abstraction2.defOfWord = 'the process of removing concrete and particular detail from a description or representation. The concrete and particular details removed are left undescribed or unrepresented and subject to inference by the audience.';
+  // abstraction2.combo = abstraction2.word + ':<br> ' + '&#40;' + abstraction2.wordType + '&#41; ' + abstraction2.defOfWord;
 
 
 
@@ -109,16 +110,17 @@ $(document).ready(function() {
   applicable.combo = applicable.word + ':<br>' + '&#40;' + applicable.wordType + '&#41; ' + applicable.defOfWord;
 
   var apply = new Dictionary('apply');
-  apply.wordType= 'v';
+  apply.wordType= '1st&#58;v 2nd&#58;tv';
   apply.word = 'apply';
-  apply.defOfWord = 'to put to use; to employ.';
-  apply.combo = apply.word + ':<br>' + '&#40;' + apply.wordType + '&#41; ' + apply.defOfWord;
+  apply.defOfWord = 'v&#58;  to put to use; to employ.';
+  apply.additional = 'tv&#58; to have relevance or a valid connection.'
+  apply.combo = apply.word + ':<br>' + '&#40;' + apply.wordType + '&#41; ' + apply.defOfWord + '<br>' + apply.additional;
 
-  var apply2 = new Dictionary('apply');
-  apply2.wordType= 'tv';
-  apply2.word = 'apply';
-  apply2.defOfWord = 'to have relevance or a valid connection.';
-  apply2.combo = apply2.word + ':<br>' + '&#40;' + apply2.wordType + '&#41; ' + apply2.defOfWord;
+  // var apply2 = new Dictionary('apply');
+  // apply2.wordType= 'tv';
+  // apply2.word = 'apply';
+  // apply2.defOfWord = 'to have relevance or a valid connection.';
+  // apply2.combo = apply2.word + ':<br>' + '&#40;' + apply2.wordType + '&#41; ' + apply2.defOfWord;
 
   var assertion = new Dictionary('assertion');
   assertion.wordType= 'n';
@@ -127,16 +129,17 @@ $(document).ready(function() {
   assertion.combo = assertion.word + ':<br>' + '&#40;' + assertion.wordType + '&#41; ' + assertion.defOfWord;
 
   var attribute = new Dictionary('attribute');
-  attribute.wordType= 'n';
+  attribute.wordType= '1st&#58;n 2nd&#58;v';
   attribute.word = 'attribute';
-  attribute.defOfWord = 'a characteristic or quality, inherent in or ascribed to, someone or something. Syn: property. In computing, an attribute is a named value or relationship that exists for some or all instances of some class and is directly associated with that instance or that class.';
-  attribute.combo = attribute.word + ':<br>' + '&#40;' + attribute.wordType + '&#41; ' + attribute.defOfWord;
+  attribute.defOfWord = 'noun&#58; a characteristic or quality, inherent in or ascribed to, someone or something. Syn: property. In computing, an attribute is a named value or relationship that exists for some or all instances of some class and is directly associated with that instance or that class.';
+  attribute.additional = 'verb&#58; to regard as a characteristic or quality of a person or thing, including a cause effect relationship. Syn. ascribe, impute.';
+  attribute.combo = attribute.word + ':<br>' + '&#40;' + attribute.wordType + '&#41; ' + attribute.defOfWord + '<br>' + attribute.additional;
 
-  var attribute2 = new Dictionary('attribute');
-  attribute2.wordType= 'v';
-  attribute2.word = 'attribute';
-  attribute2.defOfWord = 'to regard as a characteristic or quality of a person or thing, including a cause effect relationship. Syn. ascribe, impute.';
-  attribute2.combo = attribute2.word + ':<br>' + '&#40;' + attribute2.wordType + '&#41; ' + attribute2.defOfWord;
+  // var attribute2 = new Dictionary('attribute');
+  // attribute2.wordType= 'v';
+  // attribute2.word = 'attribute';
+  // attribute2.defOfWord = 'to regard as a characteristic or quality of a person or thing, including a cause effect relationship. Syn. ascribe, impute.';
+  // attribute2.combo = attribute2.word + ':<br>' + '&#40;' + attribute2.wordType + '&#41; ' + attribute2.defOfWord;
 
   //B//
 
@@ -216,16 +219,17 @@ $(document).ready(function() {
   congruence.combo = congruence.word + ':<br>' + '&#40;' + congruence.wordType + '&#41; ' + congruence.defOfWord;
 
   var huntConstruct = new Dictionary('construct');
-  huntConstruct.wordType = 'v';
+  huntConstruct.wordType = '1st&#58;v 2nd&#58;n';
   huntConstruct.word = 'construct';
-  huntConstruct.defOfWord = 'to form by assembling or combining parts; build.  Notes&#58; Construct literallly parses into &#34;to pile up&#34; or &#34;to spread together&#34;.  The implictaion being that the verb doesn&#39;t assume that the composition is done purposefully.  Construction can be accidental, haphazard, and arbitrary as well as well-planned or thought out.';
-  huntConstruct.combo = huntConstruct.word + ':<br>' + '&#40;' + huntConstruct.wordType + '&#41; ' + huntConstruct.defOfWord;
+  huntConstruct.defOfWord = 'verb&#58;  to form by assembling or combining parts; build.  Notes&#58; Construct literallly parses into &#34;to pile up&#34; or &#34;to spread together&#34;.  The implictaion being that the verb doesn&#39;t assume that the composition is done purposefully.  Construction can be accidental, haphazard, and arbitrary as well as well-planned or thought out.';
+  huntConstruct.additional = 'noun&#58;something formed or constructed from parts; a concrete image or idea.<br>Notes&#58;<br>1.  The word &#34;construct&#34; is usually but not always synonymous with &#34;synthesis&#34;><br>2.  &#34Construct&#34; carries connotations of both artificially created objects like bridges and naturally occurring objects.  It is often used in absence of a teleological end or without assuming an intelligent designer.  For example, a planet can be constructed via accretion.  This distinguishes its use from that of &#34;synthetic&#34;, which usually assumes artificial origins.<br>3.  &#34;Construct&#34; often carries connotations of concreteness as in &#34;constructive proof&#34; which requires that an explicit procedure for creating an object be specified.'
+  huntConstruct.combo = huntConstruct.word + ':<br>' + '&#40;' + huntConstruct.wordType + '&#41; ' + huntConstruct.defOfWord + '<br>' + huntConstruct.additional;
 
-  var h2Construct = new Dictionary('construct');
-  h2Construct.wordType = 'n';
-  h2Construct.word = 'construct';
-  h2Construct.defOfWord = 'something formed or constructed from parts; a concrete image or idea.<br>Notes&#58;<br>1.  The word &#34;construct&#34; is usually but not always synonymous with &#34;synthesis&#34;><br>2.  &#34Construct&#34; carries connotations of both artificially created objects like bridges and naturally occurring objects.  It is often used in absence of a teleological end or without assuming an intelligent designer.  For example, a planet can be constructed via accretion.  This distinguishes its use from that of &#34;synthetic&#34;, which usually assumes artificial origins.<br>3.  &#34;Construct&#34; often carries connotations of concreteness as in &#34;constructive proof&#34; which requires that an explicit procedure for creating an object be specified.';
-  h2Construct.combo = h2Construct.word + ':<br>' + '&#40;' + h2Construct.wordType + '&#41; ' + h2Construct.defOfWord;
+  // var h2Construct = new Dictionary('construct');
+  // h2Construct.wordType = 'n';
+  // h2Construct.word = 'construct';
+  // h2Construct.defOfWord = 'something formed or constructed from parts; a concrete image or idea.<br>Notes&#58;<br>1.  The word &#34;construct&#34; is usually but not always synonymous with &#34;synthesis&#34;><br>2.  &#34Construct&#34; carries connotations of both artificially created objects like bridges and naturally occurring objects.  It is often used in absence of a teleological end or without assuming an intelligent designer.  For example, a planet can be constructed via accretion.  This distinguishes its use from that of &#34;synthetic&#34;, which usually assumes artificial origins.<br>3.  &#34;Construct&#34; often carries connotations of concreteness as in &#34;constructive proof&#34; which requires that an explicit procedure for creating an object be specified.';
+  // h2Construct.combo = h2Construct.word + ':<br>' + '&#40;' + h2Construct.wordType + '&#41; ' + h2Construct.defOfWord;
 
   var constructiveModel = new Dictionary('constructive model');
   constructiveModel.wordType = 'n';
@@ -730,11 +734,11 @@ $(document).ready(function() {
   weakBisimulation.combo = weakBisimulation.word + ':<br>' + '&#40;' + weakBisimulation.wordType + '&#41; ' + weakBisimulation.defOfWord;
 
   //alphabet Arrays//
-  var aLetters = [abstraction, abstraction2, actor, agent, agentBased, agentDirected, agentOriented, algorithm, analog, applicability, applicable, apply, apply2, assertion, attribute, attribute2];
+  var aLetters = [abstraction, actor, agent, agentBased, agentDirected, agentOriented, algorithm, analog, applicability, applicable, apply, assertion, attribute];
 
   var bLetters = [biomimetic, biomimeticAnalog, biomimicry, bisimulation];
 
-  var cLetters = [calibration, complex, complexity, concrete, concurrent, concurrentSimulation, concurrentSimulator, congruence, huntConstruct, h2Construct, constructiveModel, constructiveProof, constructiveSimulation, correctModel, correctSimulation, correctSimulator, correctness, coSimulation, crossmodelValidity];
+  var cLetters = [calibration, complex, complexity, concrete, concurrent, concurrentSimulation, concurrentSimulator, congruence, huntConstruct, constructiveModel, constructiveProof, constructiveSimulation, correctModel, correctSimulation, correctSimulator, correctness, coSimulation, crossmodelValidity];
 
   var dLetters = [derivability, derivable, derive, descriptiveModel, detail, distributedSimulator];
 
@@ -830,7 +834,7 @@ var showDefinition = (function(userInput) {
     for(var j = 0; j< allLetters[i].length; j++) {
       if(allLetters[i][j].word == userInput) {
         var activeWord = $('<p class="' + labelForDiv + '">' + allLetters[i][j].combo + '</p>');
-        $(activeWord).appendTo('.openDictionary').addClass('styled-words').siblings().hide();        
+        $(activeWord).appendTo('.openDictionary').addClass('styled-words').siblings().hide();
       }
     //Clear the text box//
     $('#userInput').val('');
@@ -843,7 +847,6 @@ var showDefinition = (function(userInput) {
 $('#userInput').keypress(function(event) {
   if(event.keyCode === 13) {
     showDefinition(userInput);
-    console.log(userInput);
   }
 })
 
