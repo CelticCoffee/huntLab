@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+}
+
+.titleJournal a {
+  text-decoration: none;
+}
+
+.listOfJournals {
+  display: none;
+}
+
+.cueJournals a {
+  text-decoration: none;
+}
+
+.itemDescription {
+  margin-left: 3em;
+}
+
+.softwareItem a {
+  text-decoration: none;
+}
+
+.softwareItem {
+  margin-left: 1em;
+}
+
+.centerElements {
+  margin-left: 5em;
+}
