@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <name> -- Wendy Goodwin <role> design and development-- <twitter> @effesenden
 
 # THANKS
 
-    <name>
+    <name> 
 
 # TECHNOLOGY COLOPHON
 

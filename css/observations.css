@@ -1,0 +1,86 @@
+.aboutHuntLab {
+  font-size: 1.1em;
+}
+
+#scienceReshape a {
+  text-decoration: none;
+}
+
+
+
+#article2part2 {
+  margin-top: -3em;
+  display: none;
+}
+
+#genotypeReferences {
+  display: none;
+}
+
+.observationArticles {
+  color: #8B0000;
+}
+
+.hidden {
+  display: none;
+}
+
+#article3part2 {
+  display: none;
+  margin-top: -2em;
+}
+
+.articleList li {
+  margin-top: 1em;
+}
+#article4part2 {
+  display: none;
+  margin-top: -2em;
+}
+
+#part4List {
+  display: none;
+}
+
+#hunt4cont {
+  display: none;
+  margin-top: -2em;
+}
+
+#article5part2 {
+  display: none;
+  margin-top: -2em;
+}
+
+#article6part2 {
+  display: none;
+  margin-top: -2em;
+}
+
+#genotypeReferences {
+  margin-top: -2em;
+  font-size: 1em;
+}
+#genotypeReferences li {
+  padding-top: 1em;
+}
+
+#closeArticle6 {
+  display: none;
+}
+
+#closeArticle5 {
+  display: none;
+}
+
+#closeArticle4 {
+  display: none;
+}
+
+#closeArticle3 {
+  display: none;
+}
+
+#closeArticle2 {
+  display: none;
+}
