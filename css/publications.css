@@ -1,0 +1,53 @@
+.peerReviewed li{
+  padding-top: 1em;
+}
+
+.peerReviewed a {
+  text-decoration: none;
+}
+
+.articleStyle {
+  display: inline-block;
+}
+
+.title {
+  padding-top: 1em;
+  color: #337ab7;
+}
+
+.authors {
+  /*font-weight: bold;*/
+}
+
+.journal {
+  font-style: italic;
+  color: #8B0000;
+  font-weight: 580;
+  margin-left: .25em;
+}
+
+.journalEntry p {
+  display: inline-block;
+  /*line-height: .8em;*/
+  margin: 0, 0, 0;
+}
+
+.peerProceedings a {
+  text-decoration: none;
+}
+
+.peerProceedings p {
+  margin: 0, 0, 0;
+}
+
+.peerProceedings .journal {
+  color: black;
+}
+
+
+
+h4 {
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
