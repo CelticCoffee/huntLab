@@ -1,0 +1,33 @@
+.titlemast {
+  padding: 2em;
+  text-align: center;
+  background-color: #778899;
+  border-radius: 5px;
+  }
+
+.titlemast h2 {
+  color: white;
+}
+
+.titlemast h5 {
+  font-size: 1.35em;
+  font-family: 'Permanent Marker', serif;
+}
+
+.singleArticle {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1.5em;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.singleArticle h4 {
+  font-family: 'Permanent Marker', serif;
+}
+
+.singleArticle p {
+  padding-left: 1em;
+  text-align: left;
+  font-size: 1.25em;
+}
